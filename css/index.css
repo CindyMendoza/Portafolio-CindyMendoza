@@ -1,7 +1,10 @@
 
 /*General*/
-body, h1,h2,h3,h4,h5,h6 {
+body * {
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .container-flex-row{
   display: flex;
@@ -14,19 +17,15 @@ body, h1,h2,h3,h4,h5,h6 {
 
 }
 .container-flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
 .container-flex-column-reverse{
 
-}
-.sideRight{
-    height: 100%;
-    width: 40%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    filter: grayscale(100%);
 }
 .bg-My-img {
     background-position: center;
@@ -34,4 +33,21 @@ body, h1,h2,h3,h4,h5,h6 {
     background-size: cover;
     background-image: url('../img/Cm.JPG');
     min-height: 100%;
+    z-index: 1;
+    position: fixed;
+    filter: grayscale(100%);
+    width: 40%;
+    top: 0;
+    left: 0;
+}
+.ico-hamburger{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+.img-porta{
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
 }
