@@ -3,51 +3,37 @@
 body * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  padding: 5px;
 }
-.container-flex-row{
+.flex-row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.container-flex-row-reverse{
+.flex-row-reverse{
 
 }
-.container-flex-column{
+.flex-column{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.flex-column-reverse{
 
 }
-.container-flex-column-reverse{
-
+img{
+  width: 100%;
+  height: 100%;
 }
-.bg-My-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../img/Cm.JPG');
-    min-height: 100%;
-    z-index: 1;
-    position: fixed;
-    filter: grayscale(100%);
-    width: 40%;
-    top: 0;
-    left: 0;
-}
-.ico-hamburger{
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-}
-.img-porta{
-  height: 200px;
+.div-img{
   width: 200px;
+  height: 200px;
   overflow: hidden;
+}
+p{
+  text-align: center;
 }
