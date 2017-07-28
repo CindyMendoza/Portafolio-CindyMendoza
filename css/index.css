@@ -1,9 +1,32 @@
 
 /*General*/
+/*color texto crema*/
+/*rgb(244,214,167)*/
+/*color chocolate
+rgb(161,128,114)*/
 body * {
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: rgb(244,214,167);
+  /*background-color: rgb(161,128,114);*/
   box-sizing: border-box;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
+}
+.bb{
+  border: 1px solid black;
+}
+.bc{
+  border: 1px solid rgb(161,128,114);
+}
+.cb{
+  color:  rgb(244,214,167);
+}
+.bgB{
+  background-color: black;
+}
+.bgC{
+  background-color: rgb(161,128,114);
 }
 .flex-row{
   display: flex;
@@ -12,9 +35,6 @@ body * {
   justify-content: center;
   align-items: center;
 }
-.flex-row-reverse{
-
-}
 .flex-column{
   display: flex;
   flex-direction: column;
@@ -22,18 +42,60 @@ body * {
   justify-content: center;
   align-items: center;
 }
-.flex-column-reverse{
 
+/*Header*/
+header *{
+  padding: 15px 10px;
+  margin: 5px;
 }
-img{
-  width: 100%;
-  height: 100%;
+#yo *{
+  padding: 15px 10px;
+  margin: 5px;
 }
+#py *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+#contac *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+footer *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+
+.flex-row-reverse{
+}
+
+.flex-column-reverse{
+}
+
 .div-img{
   width: 200px;
   height: 200px;
   overflow: hidden;
+  background-color:rgb(244,214,167);
+  border: 1px solid black;
+}
+input{
+  border-radius: 5px;
+  background-color: rgb(161,128,114);
+  border: 1px solid black;
+
+}
+input:focus{
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 3px;
+}
+input::placeholder{
+  color: rgb(244,214,167);
 }
 p{
   text-align: center;
+}
+img{
+  width: 100%;
+  height: 100%;
 }
