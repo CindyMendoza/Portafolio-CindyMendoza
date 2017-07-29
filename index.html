@@ -20,16 +20,19 @@
           <i class="glyphicon glyphicon-menu-hamburger btn-lg"></i>
         </a>
       </div> -->
-      <header class=" bgB container-fluid">
+      <header class="pddtpbt bgB container-fluid">
         <div class="row">
-          <div class="col-md-4 col-lg-4 flex-row">
-            <div class="div-img">
+          <div class="col-md-4 col-lg-4 flex-column">
+            <div class=" hidden-md hidden-lg div-img">
+              <img src="img/logocm.png" alt="">
+            </div>
+            <div class=" hidden-xs hidden-sm div-img">
               <img src="img/Cm.JPG" alt="">
             </div>
           </div>
-          <div class="col-md-8 col-lg-8 flex-column">
-            <h1>Cindy Mendoza</h1>
-            <p>Front End Developer Junior</p>
+          <div class="col-md-7 col-lg-7 flex-column">
+            <h1 class="hidden-xs hidden-sm">Cindy Mendoza</h1>
+            <p class="hidden-xs hidden-sm">Front End Developer Junior</p>
             <button class="bh bb bgC cb btn btn-default btn-lg">
               <i class="glyphicon glyphicon-download"></i> Descargar CV
             </button>
@@ -38,16 +41,19 @@
       </header>
       <!-- <nav>
       </nav> -->
-      <section class="bgC container-fluid flex-column" id="yo">
-        <h2>Acerca de mí</h2>
+      <section class="pddtpbt bgC container-fluid flex-column" id="yo">
+        <h2 class="textBlack">Acerca de mí</h2>
         <p>Hola, bienvenido a mi portafolio. Soy egresada del
           bootcamp de laboratoria, me interesa el desarrollo
-          web y crear soluciones usando la tecnología.
+          web y me interesa crear y desarrollar
+          sistemas tecnológicos que solucionen problemas sociales.
           En esta web podras ver los proyectos que realizó y
           en los que colaboró.
         </p>
-        <h3 class="">TECH SKILLS</h3>
-        <div class="flex-row">
+      </section>
+      <section class="pddtpbt bgC container-fluid flex-column" id="ts">
+        <h3 class="textBlack">TECH SKILLS</h3>
+        <div class="hidden-xs hidden-sm flex-row">
           <div class="">
             <p class="">JavaScript</p>
             <div class="div-img">
@@ -139,65 +145,202 @@
             </div>
           </div>
         </div>
+        <div class="hidden-md hidden-lg flex-row-wrap-reverse bgB">
+          <div class="col-xs-12 flex-column">
+            <p class="">JavaScript</p>
+            <div class="div-img">
+              <img src="img/js.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Css</p>
+            <div class="div-img">
+              <img src="img/css3.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Html</p>
+            <div class="div-img">
+              <img src="img/html.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Bootstrap</p>
+            <div class="div-img">
+              <img src="img/boot.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Sass</p>
+            <div class="div-img">
+              <img src="img/sass.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Responsive Desing</p>
+            <div class="div-img">
+              <img src="img/rs.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Accessibility</p>
+            <div class="div-img">
+              <img src="img/ace.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Browser Compatibility</p>
+            <div class="div-img">
+              <img src="img/comp.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Seo</p>
+            <div class="div-img">
+              <img src="img/seo.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">JQuery</p>
+            <div class="div-img">
+              <img src="img/jquery.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">NodeJS</p>
+            <div class="div-img">
+              <img src="img/node.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Ajax</p>
+            <div class="div-img">
+              <img src="img/ajax.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">JSon</p>
+            <div class="div-img">
+              <img src="img/json.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Github</p>
+            <div class="div-img">
+              <img src="img/git.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-12 flex-column">
+            <p class="">Heroku</p>
+            <div class="div-img">
+              <img src="img/hero.png" alt="">
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="bgB container-fluid flex-column" id="py">
+      <section class="pddtpbt bgB container-fluid flex-column" id="py">
         <h2 class="">Mis proyectos</h2>
-        <div class="flex-row">
-            <div class="thumbnail bgB bb">
+        <div class="hidden-xs hidden-sm flex-row">
+            <div class="thumbnail bgB bb flex-column">
               <div class="div-img">
                 <img src="img/celular.png" class="">
               </div>
-              <div class="caption">
+              <div class="caption flex-column">
                   <h3>LabCar</h3>
                   <p>info</p>
                   <p><a href="#" class="bb bgC cb btn btn-default" role="button">Demo</a> <a href="#" class="bb bgC cb btn btn-default" role="button">Github</a></p>
               </div>
             </div>
-            <div class="thumbnail bgB bb">
+            <div class="thumbnail bgB bb flex-column">
               <div class="div-img">
                 <img src="img/pokedex.png" class="">
               </div>
-              <div class="caption">
+              <div class="caption flex-column">
                   <h3>Pokédex</h3>
                   <p>info</p>
                   <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
               </div>
             </div>
-            <div class="thumbnail bgB bb">
+            <div class="thumbnail bgB bb flex-column">
               <div class="div-img">
                 <img src="img/yape.jpg" class="">
               </div>
-              <div class="caption">
+              <div class="caption flex-column">
                   <h3>Yape</h3>
                   <p>info</p>
                   <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
               </div>
             </div>
-          </div>
+        </div>
+        <div class="hidden-md hidden-lg flex-row">
+            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
+              <div class="div-img">
+                <img src="img/celular.png" class="">
+              </div>
+              <div class="caption flex-column">
+                  <h3>LabCar</h3>
+                  <p>info</p>
+                  <p><a href="#" class="bb bgC cb btn btn-default" role="button">Demo</a> <a href="#" class="bb bgC cb btn btn-default" role="button">Github</a></p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
+              <div class="div-img">
+                <img src="img/pokedex.png" class="">
+              </div>
+              <div class="caption flex-column">
+                  <h3>Pokédex</h3>
+                  <p>info</p>
+                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
+              <div class="div-img">
+                <img src="img/yape.jpg" class="">
+              </div>
+              <div class="caption flex-column">
+                  <h3>Yape</h3>
+                  <p>info</p>
+                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
+              </div>
+            </div>
+        </div>
       </section>
-      <section class="bgC container-fluid flex-column" id="contac">
-        <h2>Contáctame</h2>
-        <div class="flex-row">
+      <section class="pddtpbt bgC container-fluid flex-column" id="contac">
+        <h2 class="textBlack">Contáctame</h2>
+        <div class="hidden-xs hidden-sm flex-row">
           <p><i class="glyphicon glyphicon-map-marker"></i> Lima, Perú</p>
           <p><i class="glyphicon glyphicon-phone"></i> Teléfono: 940246981</p>
           <p><i class="glyphicon glyphicon-envelope"> </i> Email: mendoza.ibarra.cindy@gmail.com </p>
         </div>
-        <p class="flex-row"> Envíame un mensaje:</p>
+        <div class="hidden-md hidden-lg flex-column">
+          <p class="col-xs-12"><i class="glyphicon glyphicon-map-marker"></i> Lima, Perú</p>
+          <p class="col-xs-12"><i class="glyphicon glyphicon-phone"></i> Teléfono: 940246981</p>
+          <p class="col-xs-12"><i class="glyphicon glyphicon-envelope"> </i> Email: mendoza.ibarra.cindy@gmail.com </p>
+        </div>
+        <h2 class="flex-row textBlack"> Envíame un mensaje:</h2>
         <form action="" target="" class="flex-column">
           <input class="" type="text" placeholder="Nombre" required name="Name">
           <input class="" type="text" placeholder="Email" required name="Email">
           <input class="" type="text" placeholder="Tema" required name="Subject">
           <input class="" type="text" placeholder="Mensaje" required name="Message">
-          <button class="bgB bc cb btn btn-default btn-lg" type="submit">
-            <i class="glyphicon glyphicon-send"></i> Enviar
+          <button class="bh bb bgB cb btn btn-default btn-lg" type="submit">
+            <i class="glyphicon glyphicon-send"></i>Enviar
           </button>
         </form>
       </section>
-      <footer class="bgB flex-row">
-        <a href="https://www.facebook.com/mendoza.ibarra.cindy" target="_blank"><i class="icon-facebook2 btn-lg"></i></a>
-        <a href="https://github.com/CindyMendoza" target="_blank"><i class="icon-github btn-lg"></i></a>
-        <a href="https://twitter.com/Mendozaic" target="_blank"><i class="icon-twitter btn-lg"></i></a>
-        <a href="https://www.linkedin.com/in/mendozacindy/" target="_blank"><i class="icon-linkedin btn-lg"></i></a>
+      <footer class="pddtpbt bgB flex-column">
+        <div class="hidden-xs hidden-sm flex-row">
+          <a href="https://www.facebook.com/mendoza.ibarra.cindy" target="_blank"><i class="icon-facebook2 btn-lg"></i></a>
+          <a href="https://github.com/CindyMendoza" target="_blank"><i class="icon-github btn-lg"></i></a>
+          <a href="https://twitter.com/Mendozaic" target="_blank"><i class="icon-twitter btn-lg"></i></a>
+          <a href="https://www.linkedin.com/in/mendozacindy/" target="_blank"><i class="icon-linkedin btn-lg"></i></a>
+        </div>
+        <div class="hidden-md hidden-lg flex-column">
+          <a class="col-xs-12" href="https://www.facebook.com/mendoza.ibarra.cindy" target="_blank"><i class="icon-facebook2 btn-lg fmovil"></i></a>
+          <a class="col-xs-12" href="https://github.com/CindyMendoza" target="_blank"><i class="icon-github btn-lg fmovil"></i></a>
+          <a class="col-xs-12" href="https://twitter.com/Mendozaic" target="_blank"><i class="icon-twitter btn-lg fmovil"></i></a>
+          <a class="col-xs-12" href="https://www.linkedin.com/in/mendozacindy/" target="_blank"><i class="icon-linkedin btn-lg fmovil"></i></a>
+        </div>
       </footer>
     </body>
 </html>
