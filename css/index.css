@@ -1,0 +1,134 @@
+
+/*General*/
+/*color texto crema*/
+/*rgb(244,214,167)*/
+/*color chocolate
+rgb(161,128,114)*/
+/*negro claro
+rgb(20,20,20)*/
+body * {
+  font-family:"Montserrat",sans-serif;
+  font-size: 18px;
+  color: rgb(244,214,167);
+  /*background-color: rgb(161,128,114);*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button{
+  height: 8rem;
+  width: 20rem;
+}
+h1,h2,h3{
+  text-transform: uppercase;
+  font-size:4rem;
+  text-align: center;
+}
+.textBlack{
+  color: rgb(20,20,20);
+}
+.bb{
+  border: 1px solid rgb(20,20,20);
+}
+.bc{
+  border: 1px solid rgb(161,128,114);
+}
+.cb{
+  color:  rgb(244,214,167);
+}
+.bgB{
+  background-color: rgb(20,20,20);
+}
+.bgC{
+  background-color: rgb(161,128,114);
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pddtpbt{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/*Header*/
+header *{
+  padding: 5px 10px;
+  margin: 5px;
+}
+#ts *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+#yo *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+#py *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+#contac *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+footer *{
+  padding: 15px 10px;
+  margin: 5px;
+}
+.fmovil{
+  font-size: 10rem;
+}
+.flex-row-wrap-reverse{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-reverse{
+}
+
+.div-img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-color:rgb(244,214,167);
+  border: 1px solid rgb(20,20,20);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+input{
+  border-radius: 5px;
+  background-color: rgb(161,128,114);
+  border: 1px solid rgb(20,20,20);
+
+}
+input:focus{
+  outline-style: solid;
+  outline-color: rgb(20,20,20);
+  outline-width: 3px;
+}
+input::placeholder{
+  color: rgb(244,214,167);
+}
+p{
+  text-align: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
