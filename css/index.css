@@ -16,9 +16,11 @@ body * {
   margin: 0;
   padding: 0;
 }
-button{
-  height: 8rem;
-  width: 20rem;
+.pd0{
+  padding: 0;
+}
+.mg0{
+  margin: 0;
 }
 h1,h2,h3{
   text-transform: uppercase;
@@ -112,18 +114,19 @@ footer *{
   align-items: center;
   border-radius: 5px;
 }
-input{
+input, textarea{
   border-radius: 5px;
   background-color: rgb(161,128,114);
   border: 1px solid rgb(20,20,20);
-
+  height: auto;
+  width: 50%;
 }
-input:focus{
+input:focus,textarea:focus{
   outline-style: solid;
   outline-color: rgb(20,20,20);
   outline-width: 3px;
 }
-input::placeholder{
+input::placeholder,textarea::placeholder{
   color: rgb(244,214,167);
 }
 p{
