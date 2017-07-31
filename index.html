@@ -321,12 +321,20 @@
         <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" target="" class="flex-column">
           <input class="" type="text" placeholder="Nombre" required name="name">
           <input class="" type="text" placeholder="EMail" required name="email">
+          <span id="email-invalid" style="display:none">
+            Debe ser una dirección de correo electrónico válida
+          </span>
           <input class="" type="text" placeholder="Asunto" required name="subject">
           <textarea name="message" rows="8" cols="80" placeholder="Mensaje" required></textarea>
           <button type="submit" class="bb bgB btn cb flex-row" style="height:50px;">
             <i style="margin:0px;padding:0px;"class="glyphicon glyphicon-send">Enviar</i>
           </button>
         </form>
+        <div style="display:none;" id="thankyou_message">
+          <h2><em>Gracias</em> por llenar el formulario!
+            Nos pondremos en contacto con usted pronto!
+          </h2>
+        </div>
       </section>
       <footer class="pddtpbt bgB flex-column">
         <div class="hidden-xs hidden-sm flex-row">
@@ -342,5 +350,6 @@
           <a class="col-xs-12" href="https://www.linkedin.com/in/mendozacindy/" target="_blank"><i class="icon-linkedin btn-lg fmovil"></i></a>
         </div>
       </footer>
+      <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     </body>
 </html>
