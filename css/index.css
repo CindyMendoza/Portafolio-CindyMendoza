@@ -10,11 +10,17 @@ rgb(20,20,20)*/
 body * {
   font-family:"Montserrat",sans-serif;
   font-size: 18px;
-  color: rgb(244,214,167);
+  color: grey;
   /*background-color: rgb(161,128,114);*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+header{
+  background-color: grey;
+}
+#carousel-example-generic img{
+  height: 500px;
 }
 .pd0{
   padding: 0;
@@ -39,12 +45,12 @@ h1,h2,h3{
 .cb{
   color:  rgb(244,214,167);
 }
-.bgB{
+/*.bgB{
   background-color: rgb(20,20,20);
-}
-.bgC{
+}*/
+/*.bgC{
   background-color: rgb(161,128,114);
-}
+}*/
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -84,13 +90,22 @@ header *{
   padding: 15px 10px;
   margin: 5px;
 }
-footer *{
-  padding: 15px 10px;
-  margin: 5px;
+footer , footer *{
+background-color: grey;
+color: white;
+margin: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
-.fmovil{
+.fixed {
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+}
+/*.fmovil{
   font-size: 10rem;
-}
+}*/
 .flex-row-wrap-reverse{
   display: flex;
   flex-direction: row;
@@ -116,7 +131,7 @@ footer *{
 }
 input, textarea{
   border-radius: 5px;
-  background-color: rgb(161,128,114);
+  /*background-color: rgb(161,128,114);*/
   border: 1px solid rgb(20,20,20);
   height: auto;
   width: 50%;
