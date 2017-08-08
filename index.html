@@ -43,6 +43,7 @@
               <h3>JavaScript</h3>
             </div>
           </div>
+
           <div class="item">
             <img src="img/ac.jpg" alt="...">
             <div class="carousel-caption">
@@ -107,7 +108,7 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
       </div>
-      <section class="pddtpbt bgC container-fluid flex-column" id="yo">
+      <section class="pddtpbt flex-column" id="yo">
         <div class="container">
           <p>Hola, bienvenido a mi portafolio.
             Soy Cindy Mendoza egresada del
@@ -120,90 +121,16 @@
         </div>
 
       </section>
-      <section class="pddtpbt container-fluid">
-        <div class="row">
-          <div class="col-xs-6 flex-row">
-            <div class="div-img">
-              <img src="img/logocm.png" alt="">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <h1 class="">Cindy Mendoza</h1>
-            <p class="">Front End Developer Junior</p>
-
-          </div>
-        </div>
-      </section>
-      <section class="pddtpbt bgB container-fluid flex-column" id="py">
-        <h2 class="">Mis proyectos</h2>
-        <div class="hidden-xs hidden-sm flex-row">
-            <div class="thumbnail bgB bb flex-column">
-              <div class="div-img">
+      <section class="pddtpbt container-fluid flex-column" id="py">
                 <img src="img/celular.png" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>LabCar</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bb bgC cb btn btn-default" role="button">Demo</a> <a href="#" class="bb bgC cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-            <div class="thumbnail bgB bb flex-column">
-              <div class="div-img">
+                <h3>LabCar</h3>
                 <img src="img/pokedex.png" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>Pokédex</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-            <div class="thumbnail bgB bb flex-column">
-              <div class="div-img">
+                <h3>Pokédex</h3>
                 <img src="img/yape.jpg" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>Yape</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-        </div>
-        <div class="hidden-md hidden-lg flex-row">
-            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
-              <div class="div-img">
-                <img src="img/celular.png" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>LabCar</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bb bgC cb btn btn-default" role="button">Demo</a> <a href="#" class="bb bgC cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
-              <div class="div-img">
-                <img src="img/pokedex.png" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>Pokédex</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 thumbnail bgB bb flex-column">
-              <div class="div-img">
-                <img src="img/yape.jpg" class="">
-              </div>
-              <div class="caption flex-column">
-                  <h3>Yape</h3>
-                  <p>En construcción</p>
-                  <p><a href="#" class="bgC bb cb btn btn-default" role="button">Demo</a> <a href="#" class="bgC bb cb btn btn-default" role="button">Github</a></p>
-              </div>
-            </div>
-        </div>
+                <h3>Yape</h3>
       </section>
-      <section class="pddtpbt bgC container-fluid flex-column" id="contac">
-
-        <h2 class="flex-row textBlack"> Envíame un mensaje:</h2>
+      <section class="pddtpbt container-fluid flex-column" id="contac">
+        <h2 class="">Tambien puedes escribirme por aqui:</h2>
         <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" class="flex-column">
           <input class="" type="text" placeholder="Nombre" required name="name">
           <input class="" type="text" placeholder="EMail" required name="email">
@@ -211,9 +138,9 @@
             Debe ser una dirección de correo electrónico válida
           </span>
           <input class="" type="text" placeholder="Asunto" required name="subject">
-          <textarea name="message" rows="8" cols="80" placeholder="Mensaje" required></textarea>
-          <button type="submit" class="bb bgB btn cb flex-row" style="height:50px;">
-            <i style="margin:0px;padding:0px;"class="glyphicon glyphicon-send">Enviar</i>
+          <textarea name="message" placeholder="Mensaje" required></textarea>
+          <button type="submit" class="" >
+            <i class="glyphicon glyphicon-send">Enviar</i>
           </button>
         </form>
         <div style="display:none;" id="thankyou_message">
@@ -224,8 +151,8 @@
       </section>
       <footer class="container-fluid flex-row">
           <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-map-marker"></i> Lima, Perú</span>
-          <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-phone"></i> Teléfono: 940246981</span>
-          <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-envelope"></i> Email: mendoza.ibarra.cindy@gmail.com</span>
+          <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-phone"></i>940246981</span>
+          <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-envelope"></i>mendoza.ibarra.cindy@gmail.com</span>
           <a href="https://www.facebook.com/mendoza.ibarra.cindy" target="_blank"><i class="icon-facebook2 btn-lg"></i></a>
           <a href="https://github.com/CindyMendoza" target="_blank"><i class="icon-github btn-lg"></i></a>
           <a href="https://twitter.com/Mendozaic" target="_blank"><i class="icon-twitter btn-lg"></i></a>

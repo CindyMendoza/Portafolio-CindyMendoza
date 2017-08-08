@@ -11,46 +11,21 @@ body * {
   font-family:"Montserrat",sans-serif;
   font-size: 18px;
   color: grey;
-  /*background-color: rgb(161,128,114);*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-header{
-  background-color: grey;
-}
+
 #carousel-example-generic img{
   height: 500px;
 }
-.pd0{
-  padding: 0;
-}
-.mg0{
-  margin: 0;
-}
+
 h1,h2,h3{
   text-transform: uppercase;
   font-size:4rem;
   text-align: center;
 }
-.textBlack{
-  color: rgb(20,20,20);
-}
-.bb{
-  border: 1px solid rgb(20,20,20);
-}
-.bc{
-  border: 1px solid rgb(161,128,114);
-}
-.cb{
-  color:  rgb(244,214,167);
-}
-/*.bgB{
-  background-color: rgb(20,20,20);
-}*/
-/*.bgC{
-  background-color: rgb(161,128,114);
-}*/
+
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -69,27 +44,7 @@ h1,h2,h3{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-/*Header*/
-header *{
-  padding: 5px 10px;
-  margin: 5px;
-}
-#ts *{
-  padding: 15px 10px;
-  margin: 5px;
-}
-#yo *{
-  padding: 15px 10px;
-  margin: 5px;
-}
-#py *{
-  padding: 15px 10px;
-  margin: 5px;
-}
-#contac *{
-  padding: 15px 10px;
-  margin: 5px;
-}
+
 footer , footer *{
 background-color: grey;
 color: white;
@@ -103,9 +58,7 @@ padding-bottom: 10px;
   bottom: 15px;
   right: 15px;
 }
-/*.fmovil{
-  font-size: 10rem;
-}*/
+
 .flex-row-wrap-reverse{
   display: flex;
   flex-direction: row;
@@ -116,34 +69,6 @@ padding-bottom: 10px;
 .flex-column-reverse{
 }
 
-.div-img{
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  background-color:rgb(244,214,167);
-  border: 1px solid rgb(20,20,20);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-input, textarea{
-  border-radius: 5px;
-  /*background-color: rgb(161,128,114);*/
-  border: 1px solid rgb(20,20,20);
-  height: auto;
-  width: 50%;
-}
-input:focus,textarea:focus{
-  outline-style: solid;
-  outline-color: rgb(20,20,20);
-  outline-width: 3px;
-}
-input::placeholder,textarea::placeholder{
-  color: rgb(244,214,167);
-}
 p{
   text-align: center;
 }
