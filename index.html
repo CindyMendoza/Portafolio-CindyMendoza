@@ -130,18 +130,44 @@
                 <h3>Yape</h3>
       </section>
       <section class="pddtpbt container-fluid flex-column" id="contac">
-        <h2 class="">Tambien puedes escribirme por aqui:</h2>
-        <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" class="flex-column">
-          <input class="" type="text" placeholder="Nombre" required name="name">
-          <input class="" type="text" placeholder="EMail" required name="email">
+        <p>También puedes escribirme por aquí:</p>
+        <form id="gform" class="form-inline" role="form" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" class="flex-column">
+          <div class="form-group">
+            <!-- <label for="nombre" class="col-sm-2 control-label">Nombre</label> -->
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="nombre" required name="name" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" required name="email" placeholder="Email">
+            </div>
+          </div>
           <span id="email-invalid" style="display:none">
             Debe ser una dirección de correo electrónico válida
           </span>
-          <input class="" type="text" placeholder="Asunto" required name="subject">
-          <textarea name="message" placeholder="Mensaje" required></textarea>
-          <button type="submit" class="" >
-            <i class="glyphicon glyphicon-send">Enviar</i>
-          </button>
+          <div class="form-group">
+            <!-- <label for="mensaje" class="col-sm-2 control-label">Mensaje</label> -->
+            <div class="col-sm-10">
+              <textarea class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">
+                <i class="glyphicon glyphicon-send"></i>
+                Enviar
+              </button>
+            </div>
+          </div>
+          <!-- <input class="" type="text" placeholder="Nombre" required name="name">
+          <input class="" type="text" placeholder="EMail" required name="email"> -->
+
+          <!-- <input class="" type="text" placeholder="Asunto" required name="subject"> -->
+          <!-- <textarea name="message" placeholder="Mensaje" required> -->
+          <!-- <button type="submit" class="" >
+          </button> -->
         </form>
         <div style="display:none;" id="thankyou_message">
           <h2><p>Gracias por escribirme,</p>
