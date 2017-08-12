@@ -15,6 +15,84 @@ body * {
   margin: 0;
   padding: 0;
 }
+.labcar{
+  background-image: url(../img/celular.png);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
+}
+.pokedex{
+  background-image: url(../img/pokedex.png);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
+}
+.yape{
+  background-image: url(../img/yape.jpg);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
+}
+.js{
+  background-image: url(../img/js.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.ac{
+  background-image: url(../img/ac.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.boot{
+  background-image: url(../img/boot.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.comp{
+  background-image: url(../img/comp.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.html{
+  background-image: url(../img/html.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.jquery{
+  background-image: url(../img/jquery.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.node{
+  background-image: url(../img/node.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.rd{
+  background-image: url(../img/rd.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.sass{
+  background-image: url(../img/sass.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
+.seo{
+  background-image: url(../img/seo.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height:30rem;
+}
 
 #carousel-example-generic img{
   height: 500px;
