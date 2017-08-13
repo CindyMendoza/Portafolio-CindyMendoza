@@ -14,11 +14,16 @@
 
 <!-- agregar interacciones -->
 <body>
-      <div id="menu" class="fixed">
-        <a href="download/CindyMendoza.pdf" download class="btn btn-default btn-lg" role="button">
-          <i class="glyphicon glyphicon-download"></i>Descargar CV
+      <div id="menu" class="fixed flex-column">
+        <a href="download/CindyMendoza.pdf" download class="btn btn-default flex-row" role="button">
+          <i class="glyphicon glyphicon-download"></i><spann style="display:none;">Descarga mi CV</span>
         </a>
-          <a href="#" class="btn btn-default" role="button">Atrás</a>
+        <a href="#form" class="btn btn-default flex-row" role="button">
+          <i class="glyphicon glyphicon-envelope"></i><span style="display:none;">Envíame un mensaje</span>
+        </a>
+        <a href="#py" class="btn btn-default flex-row" role="button">
+          <i class="glyphicon glyphicon-folder-open"></i><span style="display:none;">Mis proyectos</span>
+        </a>
       </div>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -39,63 +44,33 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <div class="js"></div>
-            <div class="carousel-caption">
-              <h3>JavaScript</h3>
-            </div>
           </div>
           <div class="item">
             <div class="ac"></div>
-            <div class="carousel-caption">
-              <h3>Accessibility</h3>
-            </div>
           </div>
           <div class="item">
             <div class="boot"></div>
-            <div class="carousel-caption">
-              <h3>Bootstrap</h3>
-            </div>
           </div>
           <div class="item">
             <div class="comp"></div>
-            <div class="carousel-caption">
-              <h3>Compatibility</h3>
-            </div>
           </div>
           <div class="item">
             <div class="html"></div>
-            <div class="carousel-caption">
-              <h3>HTML5 &#38; CSS3</h3>
-            </div>
           </div>
           <div class="item">
             <div class="jquery"></div>
-            <div class="carousel-caption">
-              <h3>JQuery</h3>
-            </div>
           </div>
           <div class="item">
             <div class="node"></div>
-            <div class="carousel-caption">
-              <h3>Node JS</h3>
-            </div>
           </div>
           <div class="item">
             <div class="rd"></div>
-            <div class="carousel-caption">
-              <h3>Responsive design</h3>
-            </div>
           </div>
           <div class="item">
             <div class="sass"></div>
-            <div class="carousel-caption">
-              <h3>Sass</h3>
-            </div>
           </div>
           <div class="item">
             <div class="seo"></div>
-            <div class="carousel-caption">
-              <h3>SEO</h3>
-            </div>
           </div>
         </div>
 
@@ -107,7 +82,7 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
       </div>
-      <section class="flex-column" id="yo">
+      <section class="top-bot flex-column" id="yo">
         <div class="container">
           <p>Hola, bienvenido a mi portafolio.
             Soy Cindy Mendoza egresada del
@@ -120,50 +95,47 @@
         </div>
 
       </section>
-      <section class="container-fluid flex-row" id="py">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
+      <section class="container-fluid" id="py">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="thumbnail margin flex-column">
               <div class="labcar"></div>
               <div class="caption">
-                <h3>Lab car</h3>
-                <p>XXX</p>
-                <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+                <p class="p">Web responsive para servicio de taxi, calcula el monto de pago según el kilómetro recorrido.</p>
+                <p><a href="#" class="btn btn-default" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="thumbnail margin flex-column">
               <div class="pokedex"></div>
               <div class="caption">
-                <h3>Pokedex</h3>
-                <p>XXX</p>
-                <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+                <p class="p">Web responsive de entretenimiento, te muestra las características de cada Pokémon.</p>
+                <p><a href="#" class="btn btn-default" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="thumbnail margin flex-column">
               <div class="yape"></div>
               <div class="caption">
-                <h3>Yape</h3>
-                <p>XXX</p>
-                <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+                <p class="p">Web responsive,replica de banca movil del bcp, registra un nuevo usuario con el numero celular.</p>
+                <p><a href="#" class="btn btn-default" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
               </div>
             </div>
           </div>
-
+        </div>
       </section>
-      <section class="container-fluid flex-column" id="contac">
-        <form id="gform" class="form-inline" role="form" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" class="flex-column">
-          <label class="col-sm-2 control-label">También puedes escribirme por aquí</label>
-
+      <section id="form" class="container-fluid top-bot flex-column" id="contac">
+        <form id="gform" class="form-horizontal" role="form" method="post" action="https://script.google.com/macros/s/AKfycbxiRalJwSaCzV7caEEO65RJzZfcT1rYJkFPwrvZ0nltMXwiqGs/exec" class="flex-column">
+          <label class="col-sm-2 col-md-12 control-label">También puedes escribirme por aquí</label>
           <div class="form-group">
-            <div class="col-sm-10">
+            <div class="col-sm-10 col-md-12">
               <input type="text" class="form-control" id="nombre" required name="name" placeholder="Nombre">
             </div>
           </div>
           <div class="form-group">
-            <div class="col-sm-10">
+            <div class="col-sm-10 col-md-12">
               <input type="email" class="form-control" id="email" required name="email" placeholder="Email">
             </div>
           </div>
@@ -171,7 +143,7 @@
             Debe ser una dirección de correo electrónico válida
           </span>
           <div class="form-group">
-            <div class="col-sm-10">
+            <div class="col-sm-10 col-md-12">
               <textarea class="form-control" id="mensaje" name="message" placeholder="Mensaje"></textarea>
             </div>
           </div>
@@ -189,7 +161,7 @@
           <p>Gracias por escribirme, me pondré en contacto pronto.</p>
         </div>
       </section>
-      <footer class="container-fluid flex-row">
+      <footer class="no-margin container-fluid flex-row">
           <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-map-marker"></i> Lima, Perú</span>
           <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-phone"></i>940246981</span>
           <span class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-envelope"></i>mendoza.ibarra.cindy@gmail.com</span>
