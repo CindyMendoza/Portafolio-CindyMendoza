@@ -8,7 +8,7 @@ rgb(161,128,114)*/
 /*negro claro
 rgb(20,20,20)*/
 @import url('https://fonts.googleapis.com/css?family=Gruppo');
-
+/*GENERAL*/
 body * {
   font-family: 'Gruppo', cursive;
   font-size: 20px;
@@ -18,7 +18,39 @@ body * {
   margin: 0;
   padding: 0;
 }
-
+p{
+  text-align: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.top-bot{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.no-margin{
+  margin: 0;
+}
+h1,h2,h3{
+  text-transform: uppercase;
+  font-size:4rem;
+  text-align: center;
+}
 .margin{
   margin: 1rem;
 }
@@ -34,24 +66,17 @@ body * {
   background-color: transparent;
   border: none;
 }
-.labcar{
-  background-image: url(../img/celular.png);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
+/*MENU SECTION*/
+#menu a {
+  /*width: 50px;*/
 }
-.pokedex{
-  background-image: url(../img/pokedex.png);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
+.fixed {
+  position: fixed;
+  z-index: 1;
+  bottom: 50%;
+  right: 1%;
 }
-.yape{
-  background-image: url(../img/yape.jpg);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
-}
+/*TECH SKILLS*/
 .js{
   background-image: url(../img/js.png);
   background-size: 100% 100%;
@@ -117,61 +142,31 @@ body * {
   height: 500px;
 }
 
-h1,h2,h3{
-  text-transform: uppercase;
-  font-size:4rem;
-  text-align: center;
+/*PROYECTOS SECTION*/
+.labcar{
+  background-image: url(../img/celular.png);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
+}
+.pokedex{
+  background-image: url(../img/pokedex.png);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
+}
+.yape{
+  background-image: url(../img/yape.jpg);
+  background-size: 100% 100%;
+  width: 30rem;
+  height:10rem;
 }
 
-.flex-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.flex-column{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.top-bot{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.no-margin{
-  margin: 0;
-}
+/*FOOTER SECTION*/
 footer , footer *{
 background-color: grey;
 color: white;
 margin: 5px;
 padding-top: 8px;
 padding-bottom: 8px;
-}
-.fixed {
-  position: fixed;
-  z-index: 1;
-  bottom: 50%;
-  right: 0;
-}
-
-.flex-row-wrap-reverse{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  align-items: center;
-}
-.flex-column-reverse{
-}
-
-p{
-  text-align: center;
-}
-img{
-  width: 100%;
-  height: 100%;
 }
