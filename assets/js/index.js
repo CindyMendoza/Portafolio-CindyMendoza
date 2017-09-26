@@ -1,3 +1,9 @@
+
+  // document.getElementById('datos').innerText(`Hola, bienvenidx a mi portafolio. Soy Cindy Mendoza, egresada del bootcamp de Laboratoria,
+  //    me interesa el desarrollo web y aprender nuevas tecnologías además de crear y dar solución a
+  //    través de sistemas tecnológicos a distintos sectores, sueño con resolver problemas sociales usando la
+  //    tecnología. En esta web podrás ver los proyectos que realizo y en los que colaboro.`);
+
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
@@ -119,7 +125,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 }
 function loaded() {
    $('[data-toggle="tooltip"]').tooltip();
-  console.log('contact form submission handler loaded successfully');
+   $("#datos").mouseover(function(){
+     console.log("sip")
+   });
   // bind to the submit event of our form
   var form = document.getElementById('gform');
   form.addEventListener("submit", handleFormSubmit, false);

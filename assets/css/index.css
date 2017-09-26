@@ -1,29 +1,17 @@
-
-
-/*General*/
-/*color texto crema*/
-/*rgb(244,214,167)*/
-/*color chocolate
-rgb(161,128,114)*/
-/*negro claro
-rgb(20,20,20)*/
-@import url('https://fonts.googleapis.com/css?family=Gruppo');
 /*GENERAL*/
-body * {
-  font-family: 'Gruppo', cursive;
+html, body, body * {
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  color: rgb(64,64,64);
+  font-weight: lighter;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-p{
-  text-align: center;
+.bg-grey{
+  background-color: grey;
 }
-img{
-  width: 100%;
-  height: 100%;
+.txt-white{
+  color: white;
 }
 .flex-row{
   display: flex;
@@ -39,38 +27,46 @@ img{
   justify-content: center;
   align-items: center;
 }
-.top-bot{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.txt-gold{
+  color: gold;
 }
-.no-margin{
-  margin: 0;
+/*SECTION NAVBAR*/
+.navbar{
+  margin: 0px;
 }
-h1,h2,h3{
-  text-transform: uppercase;
-  font-size:4rem;
-  text-align: center;
+.logocm{
+  background-image: url(../img/logocm.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 35px;
+  height: 35px;
 }
-.margin{
-  margin: 1rem;
-}
-.p{
-  font-family: 'Gruppo', cursive;
+nav #menu a{
+  color: white;
   font-size: 18px;
   font-weight: lighter;
 }
-.btn, .btn-default{
-  font-family: 'Gruppo', cursive;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: transparent;
-  border: none;
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
 }
-/*MENU SECTION*/
-.bg-lg{
-  background-color: lightgray;
+/*SECTION YO*/
+.cindy{
+  background-image: url(../img/cm.JPG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 8rem;
+  height:8rem;
 }
-.parpadea {
+#yo{
+  padding: 100px 0;
+}
+#rs *, #rs a{
+  text-decoration: none;
+  color: grey;
+}
+/*.parpadea {
 
   animation-name: parpadeo;
   animation-duration: 1s;
@@ -99,105 +95,79 @@ h1,h2,h3{
   0% { opacity: 1.0; }
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
-}
-
+}*/
+/*
 .fixed {
   position: fixed;
   z-index: 1;
   bottom: 50%;
   right: 1%;
-}
-/*TECH SKILLS*/
-.js{
-  background-image: url(../img/js.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.ac{
-  background-image: url(../img/ac.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.boot{
-  background-image: url(../img/boot.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.comp{
-  background-image: url(../img/comp.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.html{
-  background-image: url(../img/html.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.jquery{
-  background-image: url(../img/jquery.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.node{
-  background-image: url(../img/node.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.rd{
-  background-image: url(../img/rd.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.sass{
-  background-image: url(../img/sass.png);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-.seo{
-  background-image: url(../img/seo.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height:30rem;
-}
-
-#carousel-example-generic img{
-  height: 500px;
-}
+}*/
 
 /*PROYECTOS SECTION*/
 .labcar{
-  background-image: url(../img/labcar.png);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
+  background-image: url(../img/taxi.png);
+  background-size: 40% 40%;
+  background-repeat: no-repeat;
+  background-position:top center;
+  width: auto;
+  height:20rem;
 }
 .pokedex{
-  background-image: url(../img/pokedex.png);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
+  background-image: url(../img/poke.png);
+  background-size: 40% 40%;
+  background-repeat: no-repeat;
+  background-position:top center;
+  width: auto;
+  height: 20rem;
 }
-.yape{
-  background-image: url(../img/yape.jpg);
-  background-size: 100% 100%;
-  width: 30rem;
-  height:10rem;
+.btn, .btn-default{
+  text-align: center;
+  background-color: dimgray ;
+  border-color: gold;
+  width: auto;
 }
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+  color: white;
+}
+.espacio-py{
+  padding: 5px 0px;
+}
+#carousel-py{
+padding: 100px 0;
+}
+/*CONTAC SECTION*/
+#contac{
+  padding-top: 80px;
+  padding-bottom: 80px;
 
+}
+#contac *{
+  font-weight: lighter;
+}
+.espacio-p{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.input-group-addon{
+  background-color: transparent;
+  border-right: none;
+  height: 40px;
+}
+.form-control{
+  border-left: none;
+  height: 40px;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: lightgray;
+}
 /*FOOTER SECTION*/
 footer , footer *{
-background-color: grey;
-color: white;
-margin: 5px;
-padding-top: 8px;
-padding-bottom: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 100;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
 }
