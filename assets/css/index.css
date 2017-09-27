@@ -66,6 +66,10 @@ nav #menu a{
   text-decoration: none;
   color: grey;
 }
+#msj{
+  font-size: 18px;
+  font-weight: lighter;
+}
 /*.parpadea {
 
   animation-name: parpadeo;
@@ -121,7 +125,7 @@ nav #menu a{
   width: auto;
   height: 20rem;
 }
-.btn, .btn-default{
+.btn-py{
   text-align: center;
   background-color: dimgray ;
   border-color: gold;

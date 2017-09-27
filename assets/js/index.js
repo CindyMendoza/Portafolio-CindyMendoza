@@ -125,8 +125,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 }
 function loaded() {
    $('[data-toggle="tooltip"]').tooltip();
-   $("#datos").mouseover(function(){
-     console.log("sip")
+   $("#sm").click(function(){
+     $("#msj").toggle("slow");
    });
   // bind to the submit event of our form
   var form = document.getElementById('gform');
