@@ -7,9 +7,6 @@ Para este proyecto se utilizó:
 
 
 **Podrás ver el demo aquí**
-[CM](https://cindymendoza.github.io/Portafolio-CindyMendoza/)
+[CM](https://cindymendoza.github.io)
 
-**Breve descripción**
-
-En la parte superior hay un carrusel de imágenes que representan mis conocimientos técnicos, seguido por una breve descripción personal, ademas de los proyectos que he desarrollado. Para finalizar hay un formulario donde puedes contactarte conmigo y al final de la pagina están mis redes sociales.
-Podrás descargar mi CV en el icono al lado derecho medio de la web.
+&copy;Cindy Mendoza
