@@ -119,12 +119,22 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 }
 function loaded() {
    $('[data-toggle="tooltip"]').tooltip();
+   //muestra texto sobre mi
    $("#sm").click(function(){
      $("#msj").toggle("slow");
    });
    $("#amsj").click(function(){
      $("#msj").toggle("slow");
    });
+   //animacion para anchor
+   $('a').click(function() {
+        var $target = $(this.hash);
+        console.log(this.hash);
+        if ($target.length) {
+          var targetOffset = $target.offset().top;
+            $('html,body').animate({scrollTop: targetOffset}, "slow", "swing");
+          }
+        });
   // bind to the submit event of our form
   var form = document.getElementById('gform');
   form.addEventListener("submit", handleFormSubmit, false);
