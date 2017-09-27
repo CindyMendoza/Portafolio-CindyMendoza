@@ -33,6 +33,12 @@ html, body, body * {
 /*SECTION NAVBAR*/
 .navbar{
   margin: 0px;
+  border: 0px;
+}
+@media (min-width: 768px){
+  .navbar {
+       border-radius: 0px; 
+  }
 }
 .logocm{
   background-image: url(../img/logocm.png);
