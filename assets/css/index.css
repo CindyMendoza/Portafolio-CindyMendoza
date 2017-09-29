@@ -37,7 +37,7 @@ html, body, body * {
 }
 @media (min-width: 768px){
   .navbar {
-       border-radius: 0px; 
+       border-radius: 0px;
   }
 }
 .logocm{
@@ -117,19 +117,19 @@ nav #menu a{
 /*PROYECTOS SECTION*/
 .labcar{
   background-image: url(../img/taxi.png);
+}
+.pokedex{
+  background-image: url(../img/poke.png);
+}
+.p-materialize{
+  background-image: url(../img/consola.jpg);
+}
+.detalles{
   background-size: 40% 40%;
   background-repeat: no-repeat;
   background-position:top center;
   width: auto;
   height:20rem;
-}
-.pokedex{
-  background-image: url(../img/poke.png);
-  background-size: 40% 40%;
-  background-repeat: no-repeat;
-  background-position:top center;
-  width: auto;
-  height: 20rem;
 }
 .btn-py{
   text-align: center;
