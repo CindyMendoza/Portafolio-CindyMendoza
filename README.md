@@ -5,4 +5,4 @@ Para este proyecto se utilizó:
   * Jquery
   * Google Apps Mail
 
-&copy;Cindy Mendoza
+&copy;Cindy Mendoza-Egresada de Laboratoria.
