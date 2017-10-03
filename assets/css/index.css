@@ -35,6 +35,18 @@ html, body, body * {
   margin: 0px;
   border: 0px;
 }
+nav #menu a {
+  font-size: 0.5em !important;
+}
+nav #menu a:hover {
+  font-size: 0.7em !important;
+  background-color: white;
+  color: grey !important;
+  border-radius: 8px;
+  border: 1px solid grey;
+  transition: all 0.8ms ease 0.8ms;
+}
+
 @media (min-width: 768px){
   .navbar {
        border-radius: 0px;
@@ -106,13 +118,6 @@ nav #menu a{
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }*/
-/*
-.fixed {
-  position: fixed;
-  z-index: 1;
-  bottom: 50%;
-  right: 1%;
-}*/
 
 /*PROYECTOS SECTION*/
 .labcar{
@@ -123,6 +128,9 @@ nav #menu a{
 }
 .p-materialize{
   background-image: url(../img/consola.png);
+}
+.lyft{
+  background-image: url(../img/lyft.png);
 }
 .detalles{
   background-size: 40% 40%;
@@ -136,6 +144,12 @@ nav #menu a{
   background-color: dimgray ;
   border-color: gold;
   width: auto;
+  color: gold;
+}
+.btn-py:hover{
+  color: grey;
+  border-color: grey;
+  background-color: gold;
 }
 .glyphicon-chevron-left, .glyphicon-chevron-right{
   color: white;
