@@ -132,6 +132,9 @@ nav #menu a{
 .lyft{
   background-image: url(../img/lyft.png);
 }
+.pinterestify{
+  background-image: url(../img/pinterestify.png);
+}
 .detalles{
   background-size: 40% 40%;
   background-repeat: no-repeat;
