@@ -138,6 +138,9 @@ nav #menu a{
 .bicis{
   background-image: url(../img/bici.png);
 }
+.lovelace{
+  background-image: url(../img/lovelace.png);
+}
 .detalles{
   background-size: 40% 40%;
   background-repeat: no-repeat;
