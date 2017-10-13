@@ -123,9 +123,6 @@ nav #menu a{
 .labcar{
   background-image: url(../img/taxi.png);
 }
-.pokedex{
-  background-image: url(../img/poke.png);
-}
 .p-materialize{
   background-image: url(../img/consola.png);
 }
@@ -135,11 +132,11 @@ nav #menu a{
 .pinterestify{
   background-image: url(../img/pinterestify.png);
 }
-.bicis{
-  background-image: url(../img/bici.png);
-}
 .lovelace{
   background-image: url(../img/lovelace.png);
+}
+.applove{
+  background-image: url(../img/applove.png);
 }
 .detalles{
   background-size: 40% 40%;
