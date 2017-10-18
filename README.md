@@ -1,8 +1,5 @@
-En este repositorio publico los proyectos en los que he colaborado y desarrollado durante el bootcamp de laboratoria.
-Para este proyecto se utilizó:
+# cindymendoza.github.com
 
-  * Bootstrap
-  * Jquery
-  * Google Apps Mail
+Espacio donde presento mis trabajos. Estas invitado a revisarlo y enviarme tus comentarios.
 
-&copy;Cindy Mendoza-Egresada de Laboratoria.
+&copy;Cindy Mendoza.
