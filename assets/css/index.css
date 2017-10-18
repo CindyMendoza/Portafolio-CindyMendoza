@@ -1,10 +1,17 @@
 /*GENERAL*/
- body, body * {
-  font-family:'Montserrat', sans-serif;
+html, body, body * {
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  font-weight: lighter;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.bg-grey{
+  background-color: grey;
+}
+.txt-white{
+  color: white;
 }
 .flex-row{
   display: flex;
@@ -20,44 +27,66 @@
   justify-content: center;
   align-items: center;
 }
-
+.txt-gold{
+  color: gold;
+}
 /*SECTION NAVBAR*/
-nav ul a{
-  font-size: larger;
+.navbar{
+  margin: 0px;
+  border: 0px;
 }
-/*parallax*/
+nav #menu a {
+  font-size: 0.5em !important;
+}
+nav #menu a:hover {
+  font-size: 0.7em !important;
+  background-color: white;
+  color: grey !important;
+  border-radius: 8px;
+  border: 1px solid grey;
+  transition: all 0.8ms ease 0.8ms;
+}
 
-.parallax-container {
-    height: 800px;
+@media (min-width: 768px){
+  .navbar {
+       border-radius: 0px;
+  }
 }
-.parallax img{
-  width: 3000px;
-  height: 2000px;
+.logocm{
+  background-image: url(../img/logocm.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 35px;
+  height: 35px;
 }
-
+nav #menu a{
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
 /*SECTION YO*/
-#yo,#py,#contac{
-  padding: 100px 0px;
+.cindy{
+  background-image: url(../img/Cm.JPG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 8rem;
+  height:8rem;
 }
-@media only screen and (max-width: 993px){
-  h1{
-    font-size: 2.1rem !important;
-  }
-  .card .card-title{
-    font-size: 18px;
-  }
+#yo{
+  padding: 100px 0;
 }
- .waves-effect.waves-white .waves-ripple {
-   background-color: white;
- }
-#msj{
-  padding: 10px 0;
-}
-#rs a i{
-  color: black;
-}
-#rs a i:hover{
+#rs *, #rs a{
+  text-decoration: none;
   color: grey;
+}
+#msj{
+  font-size: 18px;
+  font-weight: lighter;
 }
 /*.parpadea {
 
@@ -91,84 +120,87 @@ nav ul a{
 }*/
 
 /*PROYECTOS SECTION*/
-h1{
-  font-size: 4.2rem;
-  line-height: 110%;
-  margin: 2.1rem 0 1.68rem;
-  font-weight: 400;
+.labcar{
+  background-image: url(../img/taxi.png);
 }
-#py .card-image img{
-  height: 750px;
+.pokedex{
+  background-image: url(../img/poke.png);
 }
-#py .card-action a{
+.p-materialize{
+  background-image: url(../img/consola.png);
+}
+.lyft{
+  background-image: url(../img/lyft.png);
+}
+.pinterestify{
+  background-image: url(../img/pinterestify.png);
+}
+.bicis{
+  background-image: url(../img/bici.png);
+}
+.lovelace{
+  background-image: url(../img/lovelace.png);
+}
+.detalles{
+  background-size: 40% 40%;
+  background-repeat: no-repeat;
+  background-position:top center;
+  width: auto;
+  height:20rem;
+}
+.btn-py{
+  text-align: center;
+  background-color: dimgray ;
+  border-color: gold;
+  width: auto;
+  color: gold;
+}
+.btn-py:hover{
+  color: grey;
+  border-color: grey;
+  background-color: gold;
+}
+.glyphicon-chevron-left, .glyphicon-chevron-right{
   color: white;
 }
-#panel{
-  padding: 20px !important;
+.espacio-py{
+  padding: 5px 0px;
+}
+#carousel-py{
+padding: 100px 0;
 }
 /*CONTAC SECTION*/
-  .input-field label {
-     color: purple !important;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: purple !important;
-   }
-   .input-field input[type=email]:focus + label {
-     color: purple !important;
-   }
-   .input-field textarea:focus + label {
-     color: purple !important;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field input[type=email]:focus {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field textarea:focus {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field input[type=email].valid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field textarea.valid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field input[type=email].invalid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   .input-field textarea.invalid {
-     border-bottom: 1px solid purple !important;
-     box-shadow: 0 1px 0 0 purple !important;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: purple !important;
-   }
+#contac{
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-/*FOOTER SECTION*/
-footer a {
-  color: white;
-  padding: 10px;
 }
-footer a i {
-  font-size: 40px;
+#contac *{
+  font-weight: lighter;
+}
+.espacio-p{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.input-group-addon{
+  background-color: transparent;
+  border-right: none;
+  height: 40px;
+}
+.form-control{
+  border-left: none;
+  height: 40px;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: lightgray;
+}
+/*FOOTER SECTION*/
+footer , footer *{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 100;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
 }
