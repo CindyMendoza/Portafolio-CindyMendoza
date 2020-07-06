@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+  <form name="submit-to-google-sheet" id="foo">
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="firstName" type="text" placeholder="First Name">
+    <input name="lastName" type="text" placeholder="Last Name">
+    <button type="submit">Send</button>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    // Variable to hold request
+    var request;
+
+    // Bind to the submit event of our form
+    $("#foo").submit(function (event) {
+
+      // Prevent default posting of form - put here to work in case of errors
+      event.preventDefault();
+
+      // Abort any pending request
+      if (request) {
+        request.abort();
+      }
+      // setup some local variables
+      var $form = $(this);
+
+      // Let's select and cache all the fields
+      var $inputs = $form.find("input, select, button, textarea");
+
+      // Serialize the data in the form
+      var serializedData = $form.serialize();
+
+      // Let's disable the inputs for the duration of the Ajax request.
+      // Note: we disable elements AFTER the form data has been serialized.
+      // Disabled form elements will not be serialized.
+      $inputs.prop("disabled", true);
+
+      // Fire off the request to /form.php
+      request = $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyBdQdrdvRXDijUzjHWtU30nHDszOstQy6pB0BGcfpVZouflfM/exec",
+        type: "post",
+        data: serializedData
+      });
+
+      // Callback handler that will be called on success
+      request.done(function (response, textStatus, jqXHR) {
+        // Log a message to the console
+        console.log("Hooray, it worked!");
+      });
+
+      // Callback handler that will be called on failure
+      request.fail(function (jqXHR, textStatus, errorThrown) {
+        // Log the error to the console
+        console.error(
+          "The following error occurred: " +
+          textStatus, errorThrown
+        );
+      });
+
+      // Callback handler that will be called regardless
+      // if the request failed or succeeded
+      request.always(function () {
+        // Reenable the inputs
+        $inputs.prop("disabled", false);
+      });
+
+    });
+  </script>
+  <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
+  <!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBdQdrdvRXDijUzjHWtU30nHDszOstQy6pB0BGcfpVZouflfM/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+    let formData = new FormData();
+    formData.append('email', 'John');
+    formData.append('firstName', 'John123');
+    formData.append('lastName', 'John123');
+    form.addEventListener('submit', e => {
+      var testform = new FormData(form)
+      console.log(testform)
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => console.log('Success!', response), form.reset())
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+</body>
+
+</html>
