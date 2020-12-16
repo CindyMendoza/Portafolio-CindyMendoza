@@ -2,370 +2,213 @@
 <html lang="en">
 
 <head>
-  <title>Cindy Mendoza </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="assets\img\logo_cindy_mendoza.png">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css"> -->
-  <link rel="stylesheet" href="assets/css/animate.css">
-
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-  <link rel="stylesheet" href="assets/css/aos.css">
-
-  <link rel="stylesheet" href="assets/css/ionicons.min.css">
-
-  <!-- <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/jquery.timepicker.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy Mendoza</title>
+    <link rel="shortcut icon" href="img\logo_cindy_mendoza.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        p {
+            font-family: 'Indie Flower', cursive;
+            font-size: 2rem;
+            text-align: center;
+            white-space: pre-wrap;
+            word-break: break-all;
+            text-shadow: 0 0 5px #fff, 0 0 8px #fff;
+        }
 
 
-  <!-- <link rel="stylesheet" href="assets/css/flaticon.css"> -->
-  <link rel="stylesheet" href="assets/css/icomoon.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/all.css">
+        @keyframes showAnchors {
+            0% {
+                opacity: 0;
+            }
+
+
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes heartbeat {
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes bounce-5 {
+            0% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                transform: scale(1.1, .9) translateY(0);
+
+            }
+
+            30% {
+                transform: scale(.9, 1.1) translateY(-100px);
+
+            }
+
+            50% {
+                transform: scale(1, 1) translateY(0);
+
+            }
+
+            57% {
+                transform: scale(1, 1) translateY(-7px);
+
+            }
+
+            64% {
+                transform: scale(1, 1) translateY(0);
+
+            }
+
+            100% {
+                transform: scale(1, 1) translateY(0);
+
+            }
+        }
+
+        @keyframes jittery {
+
+            5%,
+            50% {
+                transform: scale(1);
+            }
+
+            10% {
+                transform: scale(0.9);
+            }
+
+            15% {
+                transform: scale(1.15);
+            }
+
+            20% {
+                transform: scale(1.15) rotate(-5deg);
+            }
+
+            25% {
+                transform: scale(1.15) rotate(5deg);
+            }
+
+            30% {
+                transform: scale(1.15) rotate(-3deg);
+            }
+
+            35% {
+                transform: scale(1.15) rotate(2deg);
+            }
+
+            40% {
+                transform: scale(1.15) rotate(0);
+            }
+        }
+
+        body {
+            background: #c487de;
+            overflow: hidden;
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+
+        }
+
+        body>div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: jittery 3s infinite;
+            cursor: pointer;
+            position: relative;
+            transition: 0.2s ease-in-out;
+
+            margin: 2rem;
+            /* animation: showAnchors 10s; */
+            /* opacity: 0; */
+        }
+
+        .links {
+            animation-name: bounce-5;
+            animation-timing-function: ease;
+            animation-duration: 2s;
+            animation-iteration-count: inherit;
+            display: none;
+            opacity: 0;
+            transition: all 2s;
+        }
+
+        a:hover {
+            animation: heartbeat 0.2s infinite;
+        }
+
+        a:nth-of-type(1) {
+
+            background-image: url(data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIgLjVjLTYuNjMgMC0xMiA1LjI4LTEyIDExLjc5MiAwIDUuMjExIDMuNDM4IDkuNjMgOC4yMDUgMTEuMTg4LjYuMTExLjgyLS4yNTQuODItLjU2NyAwLS4yOC0uMDEtMS4wMjItLjAxNS0yLjAwNS0zLjMzOC43MTEtNC4wNDItMS41ODItNC4wNDItMS41ODItLjU0Ni0xLjM2MS0xLjMzNS0xLjcyNS0xLjMzNS0xLjcyNS0xLjA4Ny0uNzMxLjA4NC0uNzE2LjA4NC0uNzE2IDEuMjA1LjA4MiAxLjgzOCAxLjIxNSAxLjgzOCAxLjIxNSAxLjA3IDEuODAzIDIuODA5IDEuMjgyIDMuNDk1Ljk4MS4xMDgtLjc2My40MTctMS4yODIuNzYtMS41NzctMi42NjUtLjI5NS01LjQ2Ni0xLjMwOS01LjQ2Ni01LjgyNyAwLTEuMjg3LjQ2NS0yLjMzOSAxLjIzNS0zLjE2NC0uMTM1LS4yOTgtLjU0LTEuNDk3LjEwNS0zLjEyMSAwIDAgMS4wMDUtLjMxNiAzLjMgMS4yMDkuOTYtLjI2MiAxLjk4LS4zOTIgMy0uMzk4IDEuMDIuMDA2IDIuMDQuMTM2IDMgLjM5OCAyLjI4LTEuNTI1IDMuMjg1LTEuMjA5IDMuMjg1LTEuMjA5LjY0NSAxLjYyNC4yNCAyLjgyMy4xMiAzLjEyMS43NjUuODI1IDEuMjMgMS44NzcgMS4yMyAzLjE2NCAwIDQuNTMtMi44MDUgNS41MjctNS40NzUgNS44MTcuNDIuMzU0LjgxIDEuMDc3LjgxIDIuMTgyIDAgMS41NzgtLjAxNSAyLjg0Ni0uMDE1IDMuMjI5IDAgLjMwOS4yMS42NzguODI1LjU2IDQuODAxLTEuNTQ4IDguMjM2LTUuOTcgOC4yMzYtMTEuMTczIDAtNi41MTItNS4zNzMtMTEuNzkyLTEyLTExLjc5MnoiIGZpbGw9IiMyMTIxMjEiLz48L3N2Zz4=)
+        }
+
+        a:nth-of-type(2) {
+
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyLjE5NiAxMTIuMTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMwMDdBQjk7IiBjeD0iNTYuMDk4IiBjeT0iNTYuMDk3IiByPSI1Ni4wOTgiLz4NCgk8Zz4NCgkJPHBhdGggc3R5bGU9ImZpbGw6I0YxRjJGMjsiIGQ9Ik04OS42MTYsNjAuNjExdjIzLjEyOEg3Ni4yMDdWNjIuMTYxYzAtNS40MTgtMS45MzYtOS4xMTgtNi43OTEtOS4xMTgNCgkJCWMtMy43MDUsMC01LjkwNiwyLjQ5MS02Ljg3OCw0LjkwM2MtMC4zNTMsMC44NjItMC40NDQsMi4wNTktMC40NDQsMy4yNjh2MjIuNTI0SDQ4LjY4NGMwLDAsMC4xOC0zNi41NDYsMC00MC4zMjloMTMuNDExdjUuNzE1DQoJCQljLTAuMDI3LDAuMDQ1LTAuMDY1LDAuMDg5LTAuMDg5LDAuMTMyaDAuMDg5di0wLjEzMmMxLjc4Mi0yLjc0Miw0Ljk2LTYuNjYyLDEyLjA4NS02LjY2Mg0KCQkJQzgzLjAwMiw0Mi40NjIsODkuNjE2LDQ4LjIyNiw4OS42MTYsNjAuNjExTDg5LjYxNiw2MC42MTF6IE0zNC42NTYsMjMuOTY5Yy00LjU4NywwLTcuNTg4LDMuMDExLTcuNTg4LDYuOTY3DQoJCQljMCwzLjg3MiwyLjkxNCw2Ljk3LDcuNDEyLDYuOTdoMC4wODdjNC42NzcsMCw3LjU4NS0zLjA5OCw3LjU4NS02Ljk3QzQyLjA2MywyNi45OCwzOS4yNDQsMjMuOTY5LDM0LjY1NiwyMy45NjlMMzQuNjU2LDIzLjk2OXoNCgkJCSBNMjcuODY1LDgzLjczOUg0MS4yN1Y0My40MDlIMjcuODY1VjgzLjczOXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==)
+        }
+    </style>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">CM</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Hire me</span></a></li>
-        </ul>
-      </div>
-
+    <div>
+        <p></p>
+        <div class="links">
+            <a href="https://github.com/CindyMendoza" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.linkedin.com/in/mendozacindy/" target="_blank" rel="noopener noreferrer"></a>
+        </div>
     </div>
-  </nav>
-  <!-- END nav -->
 
-  <!-- <div class="js-fullheight"> -->
-  <div class="hero-wrap js-fullheight">
-    <div class="overlay"></div>
-    <div id="particles-js"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-        <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-            I'm Cindy Mendoza a <strong>Web Developer</strong> from Perú.
-            <!-- We love to create <strong>Beautiful</strong> websites -->
-          </h1>
-          <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="contact.html"
-              class="btn btn-primary btn-outline-white px-5 py-3">Hire me</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <script>
+        window.addEventListener('load', function () {
 
-  <div class="bg-light">
-    <section class="ftco-section-featured ftco-animate">
-      <div class="container-fluid" data-scrollax-parent="true">
-        <div class="row no-gutters d-flex align-items-center" data-scrollax=" properties: { translateY: '-30%'}">
-
-          <div class="col-md-3 mb-3">
-            <a href="https://www.sodimac.com.pe/sodimac-pe/content/a1110002/cyber-tips/" target="_blank"
-              class="featured-img">
-              <div class="text-1 p-4 d-flex align-items-center">
-                <h3>Cyber Tips<br><span class="tag">Landing</span></h3>
-              </div>
-              <img src="assets/images/image_1.jpg" class="img-fluid" alt="">
-              <div class="text p-4 d-flex align-items-center">
-                <div class="user d-flex align-items-center">
-                  <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                  <h3>Cindy Mendoza<br><span class="position">Front-End Developer</span></h3>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6">
-            <div class="row no-gutters">
-              <div class="col-md-12">
-                <div class="row no-gutters d-flex align-items-end">
-
-                  <div class="col-md-8">
-                    <a href="#" class="featured-img">
-                      <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>Promociones Banco Ripley<br><span class="tag">Website</span></h3>
-                      </div>
-                      <img src="assets/images/image_5.jpg" class="img-fluid" alt="">
-                      <div class="text p-4 d-flex align-items-center">
-                        <div class="user d-flex align-items-center">
-                          <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                          <h3>Cindy Mendoza <br><span class="position">Front-End Developer</span></h3>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-md-4">
-                    <a href="#" class="featured-img">
-                      <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>Advertisements & solicit sales<br><span class="tag">Email marketing</span></h3>
-                      </div>
-                      <img src="assets/images/image_4.jpg" class="img-fluid" alt="">
-                      <div class="text p-4 d-flex align-items-center">
-                        <div class="user d-flex align-items-center">
-                          <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                          <h3>Cindy Mendoza<br><span class="position">Email Developer</span></h3>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="row no-gutters d-flex align-items-start">
-                  <div class="col-md-8">
-                    <a href="https://bancofalabellabeneficios.pe/rapicash" class="featured-img">
-                      <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>Leads Banco Falabella<br><span class="tag">Landings</span></h3>
-                      </div>
-                      <img src="assets/images/image_6.jpg" class="img-fluid" alt="">
-                      <div class="text p-4 d-flex align-items-center">
-                        <div class="user d-flex align-items-center">
-                          <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                          <h3>Cindy Mendoza<br><span class="position">Front-End Developer</span></h3>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="#" class="featured-img">
-                      <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>In progress<br><span class="tag">Website</span></h3>
-                      </div>
-                      <img src="assets/images/image_3.jpg" class="img-fluid" alt="">
-                      <div class="text p-4 d-flex align-items-center">
-                        <div class="user d-flex align-items-center">
-                          <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                          <h3>Cindy Mendoza<br><span class="position">Full-Stack Developer</span></h3>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <a href="#" class="featured-img">
-              <div class="text-1 p-4 d-flex align-items-center">
-                <h3>In progress<br><span class="tag">Website</span></h3>
-              </div>
-              <img src="assets/images/image_2.jpg" class="img-fluid" alt="">
-              <div class="text p-4 d-flex align-items-center">
-                <div class="user d-flex align-items-center">
-                  <div class="user-img mr-3" style="background-image: url(assets/images/profilecm.jpg);"></div>
-                  <h3>Cindy Mendoza<br><span class="position">Full-Stack Developer</span></h3>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="row mt-5 d-flex justify-content-center">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="h1">
+            typeWriter();
+            setTimeout(function () {
+                showlinks();
+            }, 8000);
+        });
+        // setTimeout(showlinks(), 30000000);
+        var i = 0;
+        var txt = `Hi, I'm web developer and  I'm working with JS, Python and PHP  programming languages, you can see my projects and experience in`;
+        var speed = 50;
 
 
-              Passionate about developing and implementing digital solutions using programming languages and Cloud Computing Services.
+        // document.body.appendChild(document.createElement("P")); 
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementsByTagName("p")[0].innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
 
 
-            </h2>
-            <p><a href="contact.html" class="btn btn-primary mt-3 py-3 px-5">Hire me</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+        }
+        function showlinks() {
+            document.getElementsByClassName("links")[0].style.display = "block";
+            document.getElementsByClassName("links")[0].style.opacity = 1;
+        }
 
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-5">
-        <div class="col-md-6 text-center heading-section ftco-animate">
-
-          <h2 class="mb-4">Web technologies used</h2>
-        </div>
-
-      </div>
-      <div class="row">
-
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-3 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-react"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">React</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-4 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-vuejs"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">Vuejs</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-1 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-js"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">JavaScript</h3>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-2 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-node"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">NodeJs</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-3 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-python"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">Python</h3>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 justify-content-center col-lg-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services d-block text-center">
-            <div class="d-flex justify-content-center">
-              <div class="icon color-4 d-flex justify-content-center mb-3"><span
-                  class="align-self-center fab fa-php"></span></div>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">PHP</h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <footer class="ftco-footer ftco-bg-dark ftco-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-sm">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Cindy Mendoza</h2>
-            <p>Web Developer</p>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="ftco-footer-widget mb-4 ml-lg-5">
-            <h2 class="ftco-heading-2">Quick Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="index.html" class="py-2 d-block">Home</a></li>
-
-              <li><a href="contact.html" class="py-2 d-block">Hire me</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Contact Information</h2>
-            <ul class="list-unstyled">
-              <li><a href="javascript:void(0)" class="py-2 d-block">Lima, Perú</a></li>
-              <li><a href="javascript:void(0)" class="py-2 d-block">(+51) 940 246 981</a></li>
-              <li><a href="mailto:mendozaic17@gmail.com" class="py-2 d-block">mendozaic17@gmail.com</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="ftco-footer-widget mb-4">
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-
-              <li class="ftco-animate"><a href="https://www.linkedin.com/in/mendozacindy/" target="_blank"><span
-                    class="icon-linkedin"></span></a></li>
-              <li class="ftco-animate"><a href="https://github.com/CindyMendoza" target="_blank"><span
-                    class="icon-github"></span></a></li>
-
-              <li class="ftco-animate"><a href="https://twitter.com/Mendozaic" target="_blank"><span
-                    class="icon-twitter"></span></a></li>
-
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" /></svg></div>
-
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
-  <!-- <script src="assets/js/popper.min.js"></script> -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- <script src="assets/js/jquery.easing.1.3.js"></script> -->
-  <script src="assets/js/jquery.waypoints.min.js"></script>
-  <script src="assets/js/jquery.stellar.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/jquery.animateNumber.min.js"></script>
-  <!-- <script src="assets/js/bootstrap-datepicker.js"></script> -->
-  <!-- <script src="assets/js/jquery.timepicker.min.js"></script> -->
-  <script src="assets/js/particles.min.js"></script>
-  <script src="assets/js/particle.js"></script>
-  <script src="assets/js/scrollax.min.js"></script>
-  <!-- <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="assets/js/google-map.js"></script> -->
-  <script src="assets/js/main.js"></script>
-  <script>
-
-  </script>
+    </script>
 </body>
 
 </html>
